@@ -1,0 +1,52 @@
+.imggs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  height: 400px;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.zoom {
+  height: auto;
+  width: 23%;
+  overflow: hidden;
+  height: 150px;
+}
+
+.zoom .imgg {
+  display: block;
+  transition: all ease 0.8s;
+  width: 100%;
+  border-radius: 5px;
+}
+.imgg:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 670px) {
+  .imggs {
+    max-width: 550px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .zoom {
+    width: 29%;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .imggs {
+    max-width: 300px;
+    justify-content: center;
+    height: 300px;
+    margin: 0 auto;
+    gap: 5px;
+  }
+  .zoom {
+    width: 300px;
+    height: 180px;
+  }
+}

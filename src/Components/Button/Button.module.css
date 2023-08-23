@@ -1,0 +1,16 @@
+.buttonn {
+  background-color: #c23373;
+  font-size: 18px;
+  padding: 6px 28px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 470px) {
+  .buttonn {
+    padding: 8px 50px;
+    font-size: 15px;
+  }
+}
